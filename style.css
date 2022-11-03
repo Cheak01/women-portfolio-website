@@ -358,6 +358,12 @@ a{
 	padding: 20px 15px;
 	font-size: 1.2rem;
 	font-weight: 500;
+	outline: none;
+	box-shadow:none !important;
+}
+
+.contact form{
+	position: relative;
 }
 
 .contact img{
@@ -370,6 +376,42 @@ a{
 	letter-spacing: 1px;
 	text-align: center;	
 }
+
+.contact label{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	font-size: 2rem;
+	font-weight: 450;
+	color: silver;
+}
+
+.contact input:focus + label{
+	top: -16px;
+	padding: 0 5px;
+	background: white;
+	font-size: 1.2rem;
+	color: var(--maincolor);
+}
+
+.contact input:focus{
+	border-color: var(--maincolor);
+}
+
+.contact input:valid + label{
+	color:#20c997 !important; 
+	top: -16px;
+	padding: 0 5px;
+	background: white;
+	font-size: 1.2rem;
+}
+
+.contact input:valid{
+	border-color:#20c997;
+}
+
+
+
 					/*media quiries*/
 
 @media (max-width: 990px) {
